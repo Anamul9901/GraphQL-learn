@@ -1,0 +1,31 @@
+go: https://www.apollographql.com/docs/apollo-server/getting-started
+
+1: yarn init --yes && npm pkg set type="module"
+2: yarn add @apollo/server graphql
+3: for typescript: 
+    mkdir src
+    touch src/index.ts
+
+4: yarn add --save-dev typescript @types/node
+5: touch tsconfig.json
+6: add to tsconfig.json:
+{
+    "compilerOptions": {
+      "rootDirs": ["src"],
+      "outDir": "dist",
+      "lib": ["es2020"],
+      "target": "es2020",
+      "module": "esnext",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "types": ["node"]
+    }
+  }
+
+  7: add to package.json:
+  "type": "module",
+  "scripts": {
+    "compile": "tsc",
+    "start": "npm run compile && node ./dist/index.js"
+  }
+
