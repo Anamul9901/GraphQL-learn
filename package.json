@@ -11,11 +11,12 @@
     "install": "^0.13.0"
   },
   "scripts": {
-    "compile": "tsc",
-    "start": "npm run compile && node ./dist/index.js"
+    "compile": "tsc -w",
+    "start": "nodemon ./dist/index.js"
   },
   "devDependencies": {
     "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
     "typescript": "^5.7.3"
   }
 }

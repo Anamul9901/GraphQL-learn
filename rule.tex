@@ -29,3 +29,13 @@ go: https://www.apollographql.com/docs/apollo-server/getting-started
     "start": "npm run compile && node ./dist/index.js"
   }
 
+
+
+  // for auto run and watchmode
+  1: yarn add -D nodemon
+  2: add to package.json:
+  "scripts": {
+    "compile": "tsc -w",
+    "start": "nodemon ./dist/index.js"
+  },
+
