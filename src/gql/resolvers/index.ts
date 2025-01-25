@@ -17,6 +17,7 @@ export const resolvers = {
     },
   },
 
+  // relation query er khetre main query er bahire relation query gula add krte hoi.
   // relation query between product with category (Onet-To-One)
   Product: {
     category: (parent, args, context) => {
@@ -25,6 +26,9 @@ export const resolvers = {
         (category) => category.id === parent.categoryId
       );
     },
+    reviews: (parent, args, context)=>{
+        return db.reviews.filter((review)=> review.productId === parent.id)
+    }
   },
 
   // relation query between category with product (One-To-Many)
