@@ -7,7 +7,7 @@ const products = [
     price: 100,
     quantity: 10,
     onStock: true,
-    category: "asdfsdfjk-3434kj-343",
+    categoryId: "sdflkg3-343lkj-34g",
   },
   {
     id: "sadfsdf-werf3434-saf",
@@ -17,7 +17,7 @@ const products = [
     price: 200,
     quantity: 20,
     onStock: true,
-    category: "asdfsdfjk-3434kj-343",
+    categoryId: "sdflkg3-343lkj-34g",
   },
   {
     id: "sadfsdf-wersad3ff34-saf",
@@ -27,7 +27,7 @@ const products = [
     price: 300,
     quantity: 30,
     onStock: true,
-    category: "asdfsdfjk-3434kj-343",
+    categoryId: "sdflkg3-343lkj-3342",
   },
   {
     id: "sadfsdf-wedsfrf34-saf",
@@ -37,17 +37,17 @@ const products = [
     price: 400,
     quantity: 40,
     onStock: true,
-    category: "asdfsdfjk-3434kj-343",
+    categoryId: "sdflkg3-343lk43-342",
   },
   {
     id: "sadfsdf-werf34-sasadf",
-    name: "Product 3",
+    name: "Product 5",
     image: "https://via.placeholder.com/150",
     description: "Description 3",
     price: 300,
     quantity: 30,
     onStock: true,
-    category: "asdfsdfjk-3434kj-343",
+    categoryId: "sdflkg3-343lfg4-32",
   },
 ];
 
@@ -58,15 +58,15 @@ const categories = [
   },
   {
     id: "sdflkg3-343lkj-3342",
-    name: "Anamul",
+    name: "Sania",
   },
   {
     id: "sdflkg3-343lk43-342",
-    name: "Anamul",
+    name: "Haque",
   },
   {
     id: "sdflkg3-343lfg4-32",
-    name: "Anamul",
+    name: "Santa",
   },
 ];
 

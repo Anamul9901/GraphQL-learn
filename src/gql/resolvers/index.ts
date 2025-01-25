@@ -16,4 +16,12 @@ export const resolvers = {
       return db.categories.find((category) => category.id === args.categoryId);
     },
   },
+
+  // relation query between product and category
+  Product: {
+    category: (parent, args, context) => {
+    //   console.log(parent.categoryId);
+      return db.categories.find((category)=> category.id === parent.categoryId);
+    },
+  },
 };
