@@ -17,11 +17,20 @@ export const resolvers = {
     },
   },
 
-  // relation query between product and category
+  // relation query between product with category (Onet-To-One)
   Product: {
     category: (parent, args, context) => {
-    //   console.log(parent.categoryId);
-      return db.categories.find((category)=> category.id === parent.categoryId);
+      //   console.log(parent.categoryId);
+      return db.categories.find(
+        (category) => category.id === parent.categoryId
+      );
+    },
+  },
+
+  // relation query between category with product (One-To-Many)
+  Category: {
+    products: (parent, args, context) => {
+      return db.products.filter((product) => product.categoryId === parent.id);
     },
   },
 };
