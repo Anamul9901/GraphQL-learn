@@ -48,9 +48,29 @@ const products = [
     quantity: 30,
     onStock: true,
     category: "asdfsdfjk-3434kj-343",
-  }
+  },
+];
+
+const categories = [
+  {
+    id: "sdflkg3-343lkj-34g",
+    name: "Anamul",
+  },
+  {
+    id: "sdflkg3-343lkj-3342",
+    name: "Anamul",
+  },
+  {
+    id: "sdflkg3-343lk43-342",
+    name: "Anamul",
+  },
+  {
+    id: "sdflkg3-343lfg4-32",
+    name: "Anamul",
+  },
 ];
 
 export const db = {
-    products
-}
+  products,
+  categories,
+};
