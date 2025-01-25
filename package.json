@@ -12,7 +12,7 @@
   },
   "scripts": {
     "compile": "tsc -w",
-    "start": "nodemon ./dist/index.js"
+    "start": "nodemon ./dist/src/index.js"
   },
   "devDependencies": {
     "jest": "^29.7.0",
