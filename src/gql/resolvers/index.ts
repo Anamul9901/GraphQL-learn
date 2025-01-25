@@ -20,21 +20,23 @@ export const resolvers = {
   // relation query er khetre main query er bahire relation query gula add krte hoi.
   // relation query between product with category (Onet-To-One)
   Product: {
-    category: (parent, args, context) => {
+    category: (parent, args: any, context: any) => {
       //   console.log(parent.categoryId);
       return db.categories.find(
         (category) => category.id === parent.categoryId
       );
     },
-    reviews: (parent, args, context)=>{
-        return db.reviews.filter((review)=> review.productId === parent.id)
-    }
+    // reviews: (parent, args, context)=>{
+    reviews: ({ id }, args: any, context: any) => {
+      return db.reviews.filter((review) => review.productId === id);
+    },
   },
 
   // relation query between category with product (One-To-Many)
   Category: {
-    products: (parent, args, context) => {
-      return db.products.filter((product) => product.categoryId === parent.id);
+    // products: (parent, args: any, context: any) => {
+    products: ({id}, args: any, context: any) => {
+      return db.products.filter((product) => product.categoryId === id);
     },
   },
 };
